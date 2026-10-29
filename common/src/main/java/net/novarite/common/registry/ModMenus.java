@@ -2,7 +2,6 @@ package net.novarite.common.registry;
 
 import net.minecraft.world.inventory.MenuType;
 
-import net.novarite.common.furnitures.storage.LockerMenu;
 import net.saphyra.common.platform.PlatformRegistry;
 import net.saphyra.common.platform.PlatformRegistryObject;
 

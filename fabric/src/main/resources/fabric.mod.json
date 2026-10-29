@@ -47,6 +47,7 @@
     "fabricloader": ">=0.19.5",
     "minecraft": "~1.21.1",
     "fabric-api": ">=0.116.17+1.21.1",
-    "saphyra": ">=0.3"
+    "saphyra": ">=0.3",
+    "orevia": ">=0.1"
   }
 }

@@ -38,10 +38,11 @@ tasks.named("processResources") {
 
 dependencies {
     modImplementation("net.saphyra:saphyra-fabric-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {transitive = false}
+    modImplementation("net.orevia:orevia-fabric-${rootProject.minecraft_version}:${rootProject.orevia_version}") {transitive = false}
 }
 
 
-// Loader artifacts include Genesis Common, but never embed Saphyra.
+// Loader artifacts include Novarite Common; dependencies remain separate mods.
 tasks.named('jar') {
     from(project(':common').sourceSets.main.output)
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -50,9 +51,17 @@ tasks.named('jar') {
 
 loom {
     mods {
-        scp_genesis {
+        novarite {
             sourceSet sourceSets.main
             sourceSet project(':common').sourceSets.main
         }
+    }
+}
+
+def publicationVersion = project.version.toString()
+tasks.named('processResources') {
+    inputs.property('version', publicationVersion)
+    filesMatching(['fabric.mod.json', 'META-INF/neoforge.mods.toml']) {
+        expand(version: publicationVersion)
     }
 }

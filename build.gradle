@@ -78,4 +78,23 @@ subprojects {
             }
         }
     }
+    repositories {
+        def oreviaRepository = providers.gradleProperty('oreviaRepository')
+        if (oreviaRepository.isPresent()) {
+            exclusiveContent {
+                forRepository {
+                    maven {
+                        name = 'Orevia'
+                        url = uri(oreviaRepository.get())
+                    }
+                }
+                filter { includeGroup 'net.orevia' }
+            }
+        } else {
+            exclusiveContent {
+                forRepository { mavenLocal() }
+                filter { includeGroup 'net.orevia' }
+            }
+        }
+    }
 }

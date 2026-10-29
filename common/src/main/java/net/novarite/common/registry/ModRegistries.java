@@ -16,6 +16,5 @@ public final class ModRegistries {
         ModItems.register(registry);
         ModBlockEntities.register(registry);
         ModMenus.register(registry);
-        ModTabs.register(registry);
     }
 }

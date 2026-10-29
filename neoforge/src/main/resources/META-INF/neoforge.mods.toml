@@ -32,3 +32,10 @@ description="Novarite is a Vanilla+ Minecraft mod that expands the original game
     versionRange="[0.3,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.novarite]]
+    modId="orevia"
+    type="required"
+    versionRange="[0.1,)"
+    ordering="AFTER"
+    side="BOTH"

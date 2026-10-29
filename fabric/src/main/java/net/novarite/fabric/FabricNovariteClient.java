@@ -2,8 +2,6 @@ package net.novarite.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
 
-import net.novarite.fabric.client.FabricBlockColors;
-import net.novarite.fabric.client.FabricModelLoading;
 import net.novarite.fabric.furnitures.*;
 
 @SuppressWarnings("unused")

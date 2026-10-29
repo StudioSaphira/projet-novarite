@@ -2,7 +2,6 @@ package net.novarite.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.saphyra.fabric.platform.FabricPlatformRegistry;
 import net.novarite.common.registry.ModBlocks;
 
 @SuppressWarnings("unused")

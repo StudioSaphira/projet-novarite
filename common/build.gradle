@@ -91,3 +91,9 @@ dependencies {
         transitive = false
     }
 }
+
+dependencies {
+    compileOnly("net.orevia:orevia-common-${rootProject.minecraft_version}:${rootProject.orevia_version}") {
+        transitive = false
+    }
+}

@@ -10,7 +10,7 @@ import net.saphyra.neoforge.platform.NeoForgePlatformRegistry;
 @Mod("novarite")
 public final class NeoForgeNovarite {
 
-    public NeoForgeGenesis(IEventBus modEventBus) {
+    public NeoForgeNovarite(IEventBus modEventBus) {
         NeoForgePlatformRegistry registry = new NeoForgePlatformRegistry("novarite", modEventBus);
 
         net.novarite.common.registry.ModRegistries.register(registry);

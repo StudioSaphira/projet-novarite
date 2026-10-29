@@ -14,7 +14,7 @@ import net.novarite.neoforge.client.NeoForgeModelLoading;
 )
 public final class NeoForgeNovariteClient {
 
-    public NeoForgeGenesisClient(IEventBus modEventBus) {
+    public NeoForgeNovariteClient(IEventBus modEventBus) {
         modEventBus.addListener((net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterRenderers event) ->
                 event.registerEntityRenderer(net.novarite.common.registry.ModEntities.CHAIR_SEAT.get(),
                         net.minecraft.client.renderer.entity.NoopRenderer::new));
