@@ -1,4 +1,4 @@
-# SCP: Genesis
+# Novarite
 
 A Minecraft Mod made by Studio Saphira™.
 
@@ -6,13 +6,13 @@ A Minecraft Mod made by Studio Saphira™.
 
 ## Features
 
-- SCP Keycards
-- Copycat Blocks
+- 
 
 ## Installation
 
-1. Install NeoForge
-2. Put the mod in the mods folder.
+1. Install NeoForge/Fabric
+2. Install Saphyra, and put it in the mods folder
+3. Put the mod in the mods folder
 
 ------------------------------------------------------------------
 

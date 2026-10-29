@@ -1,6 +1,6 @@
 # NOTICE
 
-## SCP: Genesis
+## Novarite
 
 Copyright © 2026 Studio Saphira
 
@@ -14,34 +14,8 @@ Please refer to `LICENSE.md` for the complete legal texts.
 
 | Project Part | License |
 |--------------|---------|
-| SCP Foundation content | CC BY-SA 3.0 |
-| Copycat Blocks framework | GNU LGPL v3.0 or later |
 | General project source code | MIT License |
 | Studio Saphira assets, branding and identity | All Rights Reserved |
-
----
-
-# SCP Foundation Content
-
-This project contains material based on the SCP Foundation.
-
-SCP Foundation content is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0).
-
-Original website:
-
-https://scp-wiki.wikidot.com/
-
-Creative Commons License:
-
-https://creativecommons.org/licenses/by-sa/3.0/
-
----
-
-# Copycat Blocks
-
-The Copycat Blocks framework developed for this project is distributed under the GNU Lesser General Public License v3.0 or later.
-
-Only the Copycat Blocks framework and code explicitly identified as part of this framework are covered by this license.
 
 ---
 
