@@ -1,0 +1,24 @@
+package net.novarite.common.platform;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.novarite.common.copycatblocks.data.CopycatPart;
+
+import java.util.EnumMap;
+
+/**
+ * Platform abstraction for Minecraft model data.
+ *
+ * <p>The actual model data implementation is provided by the
+ * active mod loader.</p>
+ *
+ * @param <T> platform-specific model data type
+ */
+public interface PlatformModelData<T> {
+
+    interface ModelData {
+    }
+
+    T create(
+            EnumMap<CopycatPart, BlockState> copiedStates
+    );
+}

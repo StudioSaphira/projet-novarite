@@ -1,0 +1,60 @@
+plugins {
+    id 'fabric-loom' version '1.17.19'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(
+                rootProject.java_version as int
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+
+    mappings loom.officialMojangMappings()
+
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+
+    implementation project(
+            path: ':common',
+            configuration: 'namedElements'
+    )
+}
+
+tasks.named("processResources") {
+    from(project(":common").sourceSets.main.resources)
+}
+
+dependencies {
+    modImplementation("net.saphyra:saphyra-fabric-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {
+        transitive = false
+    }
+}
+
+
+// Loader artifacts include Genesis Common, but never embed Saphyra.
+tasks.named('jar') {
+    from(project(':common').sourceSets.main.output)
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+
+loom {
+    mods {
+        scp_genesis {
+            sourceSet sourceSets.main
+            sourceSet project(':common').sourceSets.main
+        }
+    }
+}

@@ -1,0 +1,271 @@
+package net.novarite.common.registry;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+
+import net.saphyra.common.platform.PlatformRegistry;
+import net.saphyra.common.platform.PlatformRegistryObject;
+
+public final class ModTabs {
+
+	private ModTabs() {}
+
+	public static PlatformRegistryObject<CreativeModeTab> CUSTOM_ITEMS;
+	public static PlatformRegistryObject<CreativeModeTab> BUILDING_BLOCKS;
+	public static PlatformRegistryObject<CreativeModeTab> COPYCAT_BLOCKS;
+	public static PlatformRegistryObject<CreativeModeTab> FURNITURES;
+	public static PlatformRegistryObject<CreativeModeTab> DOORS;
+
+	public static void register(
+			PlatformRegistry registry
+	) {
+
+		CUSTOM_ITEMS =
+				registry.registerCreativeModeTab(
+						"custom_items",
+						() -> registry.createCreativeModeTabBuilder()
+								.title(
+										Component.translatable(
+												"item_group.novarite.custom_items"
+										)
+								)
+								.icon(
+										() -> new ItemStack(
+												ModItems.KEYCARD_EC_LV5.get()
+										)
+								)
+								.displayItems(
+										(parameters, tabData) -> {
+
+											tabData.accept(ModItems.ID_CARD.get());
+
+											tabData.accept(ModItems.KEYCARD_EXTERNAL_LV0.get());
+											tabData.accept(ModItems.KEYCARD_O5.get());
+
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV1.get());
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV2.get());
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV3.get());
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV4.get());
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV5.get());
+											tabData.accept(ModItems.KEYCARD_ADMIN_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV1.get());
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV2.get());
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV3.get());
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV4.get());
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV5.get());
+											tabData.accept(ModItems.KEYCARD_INTERNAL_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_D_CLASS_LV0.get());
+
+											tabData.accept(ModItems.KEYCARD_MJD_LV1.get());
+											tabData.accept(ModItems.KEYCARD_MJD_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MJD_LV3.get());
+
+											tabData.accept(ModItems.KEYCARD_IIA_LV1.get());
+											tabData.accept(ModItems.KEYCARD_IIA_LV2.get());
+											tabData.accept(ModItems.KEYCARD_IIA_LV3.get());
+											tabData.accept(ModItems.KEYCARD_IIA_LV4.get());
+											tabData.accept(ModItems.KEYCARD_IIA_LV5.get());
+											tabData.accept(ModItems.KEYCARD_IIA_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_EIA_LV2.get());
+											tabData.accept(ModItems.KEYCARD_EIA_LV3.get());
+											tabData.accept(ModItems.KEYCARD_EIA_LV4.get());
+											tabData.accept(ModItems.KEYCARD_EIA_LV5.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_ANTHEIA5_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ANTHEIA5_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ANTHEIA5_LV5.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_UMBRA6_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_UMBRA6_LV1.get());
+											tabData.accept(ModItems.KEYCARD_MTF_UMBRA6_LV3.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_ALPHA1_LV6.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ALPHA1_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ALPHA1_LV4.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_EPSILON11_LV6.get());
+											tabData.accept(ModItems.KEYCARD_MTF_EPSILON11_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_EPSILON11_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_EPSILON11_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_EPSILON11_LV2.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_GAMMA8_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GAMMA8_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GAMMA8_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GAMMA8_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_NU7_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_NU7_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_NU7_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_NU7_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_NU7_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV1.get());
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_OMEGA1_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_RESH1_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_RESH1_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_RESH1_LV6.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_ZETA19_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ZETA19_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ZETA19_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_ZETA19_LV5.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK1_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK1_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK1_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK1_LV6.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK1_LV5.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK2_LV4.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK2_LV5.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK2_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK2_LV2.get());
+
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK3_LV1.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK3_LV2.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK3_LV3.get());
+											tabData.accept(ModItems.KEYCARD_MTF_GENERIC_RANK3_LV4.get());
+										}
+								)
+								.withSearchBar()
+				);
+
+		BUILDING_BLOCKS =
+				registry.registerCreativeModeTab(
+						"building_blocks",
+						CUSTOM_ITEMS.getId(),
+						() -> registry.createCreativeModeTabBuilder()
+								.title(
+										Component.translatable(
+												"item_group.novarite.building_blocks"
+										)
+								)
+								.icon(
+										() -> new ItemStack(
+												ModBlocks.CLEAN_WHITE_WALL.get()
+										)
+								)
+								.displayItems(
+										(parameters, tabData) -> {
+											tabData.accept(ModItems.CLEAN_WHITE_WALL.get());
+											tabData.accept(ModItems.DIRTY_WHITE_WALL.get());
+											tabData.accept(ModItems.BROKEN_WHITE_WALL_ONE.get());
+											tabData.accept(ModItems.BROKEN_WHITE_WALL_TWO.get());
+											tabData.accept(ModItems.DIRTY_BROKEN_WHITE_WALL_ONE.get());
+											tabData.accept(ModItems.DIRTY_BROKEN_WHITE_WALL_TWO.get());
+											tabData.accept(ModItems.WALL_BASE.get());
+											tabData.accept(ModItems.BARE_CONCRETE.get());
+                                        	tabData.accept(ModItems.GREEN_TILED_FLOOR.get());
+										}
+								)
+				);
+
+		COPYCAT_BLOCKS =
+				registry.registerCreativeModeTab(
+						"copycat_blocks",
+						BUILDING_BLOCKS.getId(),
+						() -> registry.createCreativeModeTabBuilder()
+								.title(
+										Component.translatable("item_group.novarite.copycat_blocks")
+								)
+								.icon(
+										() -> new ItemStack(ModBlocks.COPYCAT_CUBE.get())
+								)
+								.displayItems(
+										(parameters, tabData) -> {
+											tabData.accept(ModItems.COPYCAT_WRENCH.get());
+											tabData.accept(ModItems.COPYCAT_SCRAPER.get());
+											tabData.accept(ModItems.COPYCAT_REMOVER.get());
+											tabData.accept(ModItems.COPYCAT_CUBE.get());
+											tabData.accept(ModItems.COPYCAT_SLOPE.get());
+                                            tabData.accept(ModItems.COPYCAT_VERTICAL_SLOPE.get());
+                                            tabData.accept(ModItems.COPYCAT_PANEL.get());
+                                            tabData.accept(ModItems.COPYCAT_HALF_PANEL.get());
+                                            tabData.accept(ModItems.COPYCAT_HALF_SLAB.get());
+                                            tabData.accept(ModItems.COPYCAT_HALF_STAIRS.get());
+                                            tabData.accept(ModItems.COPYCAT_HALF_SLOPE.get());
+											tabData.accept(ModItems.COPYCAT_STAIRS.get());
+											tabData.accept(ModItems.COPYCAT_SLAB.get());
+										}
+								)
+				);
+
+		FURNITURES =
+				registry.registerCreativeModeTab(
+						"furnitures_block",
+						COPYCAT_BLOCKS.getId(),
+						() -> registry.createCreativeModeTabBuilder()
+							.title(
+									Component.translatable("item_group.novarite.furnitures")
+							)
+						    .icon(
+									() -> new ItemStack(ModItems.TABLE_OAK.get())
+							)
+							.displayItems(
+									(parameters, tabData) -> {
+										tabData.accept(ModItems.TABLE_OAK.get());
+                                        tabData.accept(ModItems.CHAIR_OAK.get());
+                    					tabData.accept(ModItems.DRAWER_OAK.get());
+										tabData.accept(ModItems.TABLE_SPRUCE.get());
+                                        tabData.accept(ModItems.CHAIR_SPRUCE.get());
+                    					tabData.accept(ModItems.DRAWER_SPRUCE.get());
+										tabData.accept(ModItems.TABLE_BIRCH.get());
+                                        tabData.accept(ModItems.CHAIR_BIRCH.get());
+                    					tabData.accept(ModItems.DRAWER_BIRCH.get());
+										tabData.accept(ModItems.TABLE_JUNGLE.get());
+                                        tabData.accept(ModItems.CHAIR_JUNGLE.get());
+                    					tabData.accept(ModItems.DRAWER_JUNGLE.get());
+										tabData.accept(ModItems.TABLE_ACACIA.get());
+                                        tabData.accept(ModItems.CHAIR_ACACIA.get());
+                    					tabData.accept(ModItems.DRAWER_ACACIA.get());
+                                        tabData.accept(ModItems.TABLE_DARK_OAK.get());
+                                        tabData.accept(ModItems.CHAIR_DARK_OAK.get());
+                    					tabData.accept(ModItems.DRAWER_DARK_OAK.get());
+                                        tabData.accept(ModItems.TABLE_MANGROVE.get());
+                                        tabData.accept(ModItems.CHAIR_MANGROVE.get());
+                    					tabData.accept(ModItems.DRAWER_MANGROVE.get());
+                                        tabData.accept(ModItems.TABLE_CHERRY.get());
+                                        tabData.accept(ModItems.CHAIR_CHERRY.get());
+                    					tabData.accept(ModItems.DRAWER_CHERRY.get());
+                                        tabData.accept(ModItems.TABLE_BAMBOO.get());
+                                        tabData.accept(ModItems.CHAIR_BAMBOO.get());
+                    					tabData.accept(ModItems.DRAWER_BAMBOO.get());
+                                        tabData.accept(ModItems.OFFICE_CHAIR.get());
+                                        tabData.accept(ModItems.PLATE.get());
+										tabData.accept(ModItems.LOCKER.get());
+                                        tabData.accept(ModItems.LOCKER_SHELF.get());
+									}
+							)
+				);
+
+		DOORS =
+				registry.registerCreativeModeTab(
+						"doors",
+						FURNITURES.getId(),
+						() -> registry.createCreativeModeTabBuilder()
+							.title(
+									Component.translatable("item_group.novarite.doors")
+							)
+							.icon(
+									() -> new ItemStack(ModBlocks.READER.get())
+							)
+							.displayItems(
+									(parameters, tabData) -> {
+										tabData.accept(ModItems.READER.get());
+                                        tabData.accept(ModItems.READER_CONFIGURATOR.get());
+                                        tabData.accept(ModItems.SCP_SLIDING_DOOR.get());
+									}
+							)
+				);
+	}
+}

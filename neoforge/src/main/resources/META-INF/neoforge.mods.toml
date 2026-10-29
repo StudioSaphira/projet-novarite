@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Custom"
+
+[[mods]]
+modId="novarite"
+version="${version}"
+displayName="Novarite"
+displayURL="https://saphira-studio.com"
+logoFile="logo.png"
+credits="Developed by Studio Saphira"
+authors="HeroFR, Studio Saphira"
+description="Novarite is a Vanilla+ Minecraft mod that expands the original game with new resources, equipment, building blocks, and exploration opportunities, introducing fresh content and gameplay possibilities while preserving the simplicity and charm of the vanilla experience."
+
+[[dependencies.novarite]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.263,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.novarite]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.novarite]]
+    modId="saphyra"
+    type="required"
+    versionRange="[0.3,)"
+    ordering="AFTER"
+    side="BOTH"
