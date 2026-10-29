@@ -12,7 +12,8 @@ A Minecraft Mod made by Studio Saphira™.
 
 1. Install NeoForge/Fabric
 2. Install Saphyra, and put it in the mods folder
-3. Put the mod in the mods folder
+3. Install Orevia, and put it in the mods folder
+4. Put the mod in the mods folder
 
 ------------------------------------------------------------------
 
