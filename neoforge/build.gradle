@@ -46,9 +46,7 @@ dependencies {
 
 
 dependencies {
-    implementation("net.saphyra:saphyra-neoforge-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {
-        transitive = false
-    }
+    implementation("net.saphyra:saphyra-neoforge-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {transitive = false}
 }
 
 

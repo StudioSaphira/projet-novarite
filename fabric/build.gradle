@@ -37,9 +37,7 @@ tasks.named("processResources") {
 }
 
 dependencies {
-    modImplementation("net.saphyra:saphyra-fabric-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {
-        transitive = false
-    }
+    modImplementation("net.saphyra:saphyra-fabric-${rootProject.minecraft_version}:${rootProject.saphyra_version}") {transitive = false}
 }
 
 
